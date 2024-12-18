@@ -8,16 +8,15 @@ public class Ejercicio3Clase3Libros {
 
     
     public static void main(String[] args) {
-        int vector[] = new int[2];
-        Libro lib = new Libro();
+         Libro lib = new Libro();
+        Libro vector[] = new Libro[5];
+       
         
         System.out.println(" LIBRERIA ");
         for(int i = 0; i < vector.length; i++){
-            
-         
+                  
           Scanner teclado = new Scanner(System.in);
-       
-            
+                 
         System.out.println("Ingresa los datos del libro");
         
         System.out.println("Ingresa el isbn del libro ");
@@ -37,24 +36,22 @@ public class Ejercicio3Clase3Libros {
                 teclado = new Scanner(System.in);
 
         lib.setNumpag(teclado.nextInt());
+          
+        //guardo libro en vector
+            vector[i] = lib;
+            //reseteo libro y scanner
+            lib = new Libro();
             
+            System.out.println("Libro cargado correctamente");
         }
+        
         
        
         
-        //imprecion
-        
-        
-        
-        /*System.out.println("Se modifica el numero de paginas a 200");
-        
-        lib.setNumpag(200);
-        
-        System.out.println("ya modificado ");
-        */
+    
         
          for(int i = 0; i < vector.length; i++){
-             System.out.println(lib.toString());
+             System.out.println(vector[i].toString());
         }
         
     }
