@@ -8,7 +8,7 @@ package ejercicio6clase2;
 import java.util.Scanner;
 public class Ejercicio6Clase2 {
 
-    
+    //
     public static void main(String[] args) {
         int vector [] = new int[15];
         int sietes = 0;
